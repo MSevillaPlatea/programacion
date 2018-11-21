@@ -49,7 +49,7 @@ input {
     display: grid;
     grid-template-columns: repeat(2) 100px;
     grid-template-rows: repeat(5) 300px;
-    grid-gap: 40px;
+    grid-gap: 10px;
     grid-template-areas: "c1 c2" "c3 c4" "c5 c5" "c6 c7" "c8 c9";
 }
 
@@ -71,6 +71,7 @@ input {
 
 .cinco {
     grid-area: c5;
+    background-color: rgb(73, 73, 223);
 }
 
 .seis {
@@ -79,6 +80,7 @@ input {
 
 .siete {
     grid-area: c7;
+    background-color: rgb(238, 74, 74);
 }
 
 .ocho {
@@ -87,8 +89,5 @@ input {
 
 .nueve {
     grid-area: c9;
-}
-
-.diez {
-    grid-area: c10;
+    background-color: aquamarine;
 }
