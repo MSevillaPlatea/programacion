@@ -17,8 +17,6 @@ var daysOfTheWeek = [
 ]
 ```
 
-[Video ejemplo](https://www.useloom.com/share/286603f6cc02472082db5809b974c86f)
-
 **Documentación:**
 
 - [for](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/for)

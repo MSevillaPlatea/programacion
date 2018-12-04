@@ -11,7 +11,7 @@
 - 3.1 Ciclos
    - `while`
    - `do while`
-   - `for`
+   - `for` (recorrer un array)
 
 - 3.2 Sentencias
    - `break`
