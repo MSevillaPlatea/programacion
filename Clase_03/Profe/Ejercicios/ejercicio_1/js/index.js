@@ -1,39 +1,20 @@
-// Array inicial con los días de la semana
-var daysOfTheWeek = [
-  'Lunes',
-  'Martes',
-  'Miércoles',
-  'Miercoles',
-  'Jueves',
-  'Viernes',
-  'Sábado',
-  'Sabado',
-  'Domingo',
-  'Pato'
-];
+var msg;
+do{
+  msg = prompt('Ingrese su contraseña');
+}while (!msg);
 
 
-// Uso un ciclo for para recorrer el Array y evaluar cada día de la semana
-for (var i = 0; i < daysOfTheWeek.length; i++) {
-  var day = daysOfTheWeek[i];
+var num;
 
-  // Comparo cada día del Array con todos los casos posibles
-  switch (day) {
-    case 'Lunes':
-    case 'Martes':
-    case 'Miércoles':
-    case 'Miercoles':
-    case 'Jueves':
-    case 'Viernes':
-      console.log('Es un día habíl');
-      break;
-    case 'Sábado':
-    case 'Domingo':
-      console.log('Es día de fin de semana');
-      break;
-    default:
-      console.log('Ingresaste cualquier cosa!');
-      break
+do {
+  num = prompt('Ingrese un numero');
+} while(parseInt(num) >= 100 || parseInt(num) < 0);
+
+
+for (var i = 10; i <= 1000; i++){
+
+  if (i % 3 === 0) {
+    console.log(i)
   }
+  //lo que se ejecuta mientras se cumpla la condicion
 }
-

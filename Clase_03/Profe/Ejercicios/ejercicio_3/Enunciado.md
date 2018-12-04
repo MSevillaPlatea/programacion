@@ -18,17 +18,37 @@ Imprimir por consola:
 o
 
 ```javascript
-	for (var i = 3; i < 1000; i = i+3) {
+	for (var i = 12; i < 1000; i = i+3) {
 	    console.log(i)
 	}
 ```
 
-- Imprimir todos los días de la semana a partir de un array ```['a', 'b', 'c', 'd']```
+- Imprimir todos los días de la semana a partir de un array
 ```javascript
 	var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
     
     for (var i = 0; i<= dias.length; i++){
       console.log(dias[i])
+    }
+```
+- A partir del mismo array de días, imprimir sólo los días de semana (pista: con switch)
+```javascript
+	var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+    var dia;
+    for (var i = 0; i< dias.length; i++){
+      dia = dias[i];
+      switch (dia) {
+        case 'Lunes':
+        case 'Martes':
+        case 'Miércoles':
+        case 'Jueves':
+        case 'Viernes':
+          console.log(dia);
+          break;
+        default:
+          console.log('es ' + dia + '. No trabajamos los fines de semana')
+          break;
+      }
     }
 ```
 

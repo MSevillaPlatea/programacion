@@ -1,8 +1,32 @@
-for (var i = 1; i <= 250; i++) {
-  console.log(i)
+var dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+var dia;
+for (var i = 0; i< dias.length; i++){
+  dia = dias[i];
+  switch (dia) {
+    case 'Lunes':
+    case 'Martes':
+    case 'Miércoles':
+    case 'Jueves':
+    case 'Viernes':
+      console.log(dia);
+      break;
+    default:
+      console.log('es ' + dia + '. No trabajamos los fines de semana')
+      break;
+  }
 }
 
+
+
+
+
 /*
+
+
+ for (var i = 1; i <= 250; i++) {
+ console.log(i)
+ }
+
 for (var i = 1; i < 1000; i++) {
   if (i%3 === 0) console.log(i)
 }

@@ -1,60 +1,57 @@
-
-var unArray = ['a', 'b', 'c', 'd'];
-var indice = 2;
-//console.log(unArray[indice]);
-
-for (var i = 0; i < unArray.length; i++){
-
-  console.log(unArray[i])
-}
-
-
-
-
-for(var a = 1 ; a < 10 ; i++){
-  console.log(a)
-}
-
-
-var p = 1;
-
-do{
-  console.log(p);
-
-  p++
-}while(p > 10);
-
-
-
-
-var j = 11;
-
-while(j < 10){
-  console.log(j);
-  i++ // i = i + 1
-}
-
-
-
-
-
-
-
-/*
 for(var i = 1 ; i < 10 ; i++){
-  console.log(i)
+  console.log('i -----', i);
 
   if(i === 5){
     break
   }
 }
 
-for(var i = 1 ; i < 5 ; i++){
-  if(i === 3){
+for(var j = 1 ; j < 5 ; j++){
+  if(j === 3){
     continue
   }
-  console.log(i)
+  console.log('j -----', j)
 }
+
+
+
+/*
+
+
+ var unArray = ['a', 'b', 'c', 'd'];
+ var a = 0;
+ var indice = 2;
+ //console.log(unArray[indice]);
+
+ for (var i = 0; i < unArray.length; i++){
+
+ console.log(unArray[i])
+ }
+
+
+ for(a = 1 ; a <= 10 ; a++){
+ console.log(a)
+ }
+
+
+
+
+ var unObjeto = {
+  color: 'rojo',
+  alto: '50cm',
+  ancho: '5m'
+};
+
+var unObjetoArray = Object.keys(unObjeto);
+
+console.log(unObjetoArray);
+
+
+*/
+
+
+/*
+
 
 var unArray = ['a', 'b', 'c', 'd'];
 
