@@ -22,7 +22,7 @@ for (var i = 0; i < daysOfTheWeek.length; i++) {
     case 'Miércoles':
     case 'Jueves':
     case 'Viernes':
-      console.log(day + ' - Es un día habíl');
+      console.log(day + ' - Es un día habil');
       break;
     case 'Sábado':
     case 'Domingo':

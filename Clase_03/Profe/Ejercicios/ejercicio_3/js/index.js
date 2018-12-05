@@ -22,10 +22,10 @@ for (var i = 0; i< dias.length; i++){
 
 /*
 
-
  for (var i = 1; i <= 250; i++) {
  console.log(i)
  }
+
 
 for (var i = 1; i < 1000; i++) {
   if (i%3 === 0) console.log(i)
