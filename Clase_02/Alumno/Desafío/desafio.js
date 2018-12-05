@@ -118,7 +118,7 @@ switch (dia) {
 //   :::::: C O N D I C I O N A L   C O N   N U M E R O S : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────────────────────────────────
 //
-
+/*
 var nombre = prompt("nombre");
 var numero = prompt("numero");
 
@@ -133,3 +133,4 @@ if (num_mod > 20) {
 } else {
     alert("que???! " + nombre);
 }
+*/
