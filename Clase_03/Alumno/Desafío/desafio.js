@@ -1,5 +1,5 @@
 var i = 1;
-var ressultado;
+var resultado;
 do {
     var operacion = prompt("que desea hacer: suma, resta, division o multiplicacion");
     i++
@@ -17,23 +17,23 @@ do {
 } while (parseInt(num_dos) % 1 !== 0);
 
 console.log(num_dos);
-
+console.log(parseInt(num_dos) % 1);
 
 switch (operacion) {
     case "suma":
-        ressultado = parseInt(num_uno) + parseInt(num_dos);
+        resultado = parseInt(num_uno) + parseInt(num_dos);
         break;
     case "resta":
-        ressultado = parseInt(num_uno) - parseInt(num_dos);
+        resultado = parseInt(num_uno) - parseInt(num_dos);
         break;
     case "division":
-        ressultado = parseInt(num_uno) / parseInt(num_dos);
+        resultado = parseInt(num_uno) / parseInt(num_dos);
         break;
     case "multiplicacion":
-        ressultado = parseInt(num_uno) * parseInt(num_dos);
+        resultado = parseInt(num_uno) * parseInt(num_dos);
         break;
     default:
         break;
 }
 
-alert(ressultado);
+alert("El resultado es " + resultado);
