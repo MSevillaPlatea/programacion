@@ -69,7 +69,7 @@ var comprobador = function(first, last, objeto) {
     // ────────────────────────── COMPRUEBA SI EL ALUMNO SE ENCUENTRA EN LA LISTA ─────
     //        
     var lugar;
-
+    var alumno;
     for (var i = 0; i < objeto.length; i++) {
 
         if (first.toLowerCase() === objeto[i].firstName.toLowerCase()) {
@@ -85,19 +85,17 @@ var comprobador = function(first, last, objeto) {
     //
     // ───────────── SI EL ALUMNO NO SE ENCUENTRA DEVUELVE NO ENCONTRADO ─────
     //
+
     if (lugar === -1) {
         alumno = "Alumno no encontrado";
-        return alumno;
     } else {
-
-        var alumno = "Posicion: " +
-            lugar + ", primer nombre: " +
-            objeto[lugar].firstName + ", Apellido: " +
-            objeto[lugar].lastName + ", DNI: " +
-            objeto[lugar].dni;
-
-        return alumno;
+        alumno = "Primer nombre: " +
+            objeto[lugar].firstName + "\nApellido: " +
+            objeto[lugar].lastName + "\nDNI: " +
+            objeto[lugar].dni + "\nPosicion: " +
+            lugar;
     }
+    return alumno;
 }
 var resultado = comprobador(nombre, apellido, studentsList);
 console.log(resultado);
