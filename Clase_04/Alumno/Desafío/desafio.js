@@ -36,41 +36,38 @@ console.log(comprobador(nombre, lista)); */
 //
 // ──────────────────── PREGUNTA NOMBRE Y APELLIDO ─────
 //
-
-
 var nombre = prompt("buscar el Nombre: ");
 
 var apellido = prompt("buscar el Apellido: ")
 
 var studentsList = [{
-        firstName: 'Juan',
-        lastName: 'Pérez',
-        dni: 45678987
-    },
-    {
-        firstName: 'Ana',
-        lastName: 'Fernandez',
-        dni: 45678989
-    },
-    {
-        firstName: 'Pedro',
-        lastName: 'Mármol',
-        dni: 45678956
-    },
-    {
-        firstName: 'Pablo',
-        lastName: 'Picapiedras',
-        dni: 45678983
-    }
-]
-
-//
-// ────────────────── COMIENZA FUNCION ─────
-//
-
-
+            firstName: 'Juan',
+            lastName: 'Pérez',
+            dni: 45678987
+        },
+        {
+            firstName: 'Ana',
+            lastName: 'Fernandez',
+            dni: 45678989
+        },
+        {
+            firstName: 'Pedro',
+            lastName: 'Mármol',
+            dni: 45678956
+        },
+        {
+            firstName: 'Pablo',
+            lastName: 'Picapiedras',
+            dni: 45678983
+        }
+    ]
+    //
+    // ────────────────── COMIENZA FUNCION ─────
+    //
 var comprobador = function(first, last, objeto) {
-
+    //
+    // ────────────────────────── COMPRUEBA SI EL ALUMNO SE ENCUENTRA EN LA LISTA ─────
+    //        
     var lugar;
 
     for (var i = 0; i < objeto.length; i++) {
@@ -104,6 +101,7 @@ var comprobador = function(first, last, objeto) {
 }
 var resultado = comprobador(nombre, apellido, studentsList);
 console.log(resultado);
+//
+// ─────────────────────── AVISA RESULTADO ─────
+//  
 alert(resultado);
-
-//console.log(comprobador(nombre, apellido, studentsList));
