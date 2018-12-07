@@ -4,6 +4,6 @@ do {
     var num = prompt("ingresa un numero entre 0 y 100")
 
     i++
-
+    // ──────── TESTEO DEL CONDICIONAL ─────
 } while (num != 45 && num > 3 || num === '')
 console.log(num);
