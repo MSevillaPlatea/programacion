@@ -29,12 +29,18 @@ miJarritaDeMedida.medir(vainilla);
 
 */
 
+
 var Empleado = function (nombre) {
   this.nombre = nombre;
   var horas = 0;
 
-  this.trabajar = function () {
-    horas++
+  this.trabajar = function (cantidad) {
+    if (cantidad){
+      horas = horas + cantidad
+    } else {
+      horas++
+    }
+
   };
 
   this.getHoras = function () {
@@ -51,6 +57,7 @@ var Jefe = function (nombre) {
   }
 };
 
+
 var pepe = new Empleado('Pepe');
 
 pepe.trabajar();
@@ -60,3 +67,16 @@ pepe.trabajar();
 var elJefe = new Jefe('Julio');
 
 elJefe.pagar(pepe);
+
+
+
+// OTRA OPCION
+var nomina = ['Juana', 'Pepe', 'Pablito', 'Clavito'];
+
+var laJefa = new Jefe('Patricia');
+
+for (var i = 0; i < nomina.length; i++) {
+  var empleado = new Empleado(nomina[i]);
+  empleado.trabajar(8);
+  laJefa.pagar(empleado)
+}
