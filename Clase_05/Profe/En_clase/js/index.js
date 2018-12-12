@@ -29,7 +29,6 @@ miJarritaDeMedida.medir(vainilla);
 
 */
 
-
 var Empleado = function (nombre) {
   this.nombre = nombre;
   var horas = 0;
@@ -48,7 +47,7 @@ var Jefe = function (nombre) {
   this.nombre = nombre;
   var valor = 500;
   this.pagar = function (empleado) {
-    console.log('Pagar ' + valor*empleado.getHoras() + ' pesos a' + empleado.name)
+    console.log('Pagar ' + valor*empleado.getHoras() + ' pesos a ' + empleado.nombre)
   }
 };
 
@@ -56,5 +55,8 @@ var pepe = new Empleado('Pepe');
 
 pepe.trabajar();
 pepe.trabajar();
+pepe.trabajar();
 
-pepe.getHoras();
+var elJefe = new Jefe('Julio');
+
+elJefe.pagar(pepe);
