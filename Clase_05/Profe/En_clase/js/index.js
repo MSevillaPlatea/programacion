@@ -52,6 +52,7 @@ var Empleado = function (nombre) {
 var Jefe = function (nombre) {
   this.nombre = nombre;
   var valor = 500;
+
   this.pagar = function (empleado) {
     console.log('Pagar ' + valor*empleado.getHoras() + ' pesos a ' + empleado.nombre)
   }
