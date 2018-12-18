@@ -40,5 +40,5 @@ function deleteElement (index, elements) {
 
 // Probando la función
 
-console.log('Array copia ', deleteElement(1, students))
+console.log('Array copia ', deleteElement(2, students))
 console.log('Array original ', students)
