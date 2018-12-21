@@ -1,30 +1,94 @@
-var lista = document.createElement('ul');
-var contenido = document.getElementById('content');
+var content = document.getElementById('content');
+var nombres = ['Ariela', 'Javier', 'Mauricio', 'Ana'];
+var reyesMagos = ['Melchor', 'Gaspar', 'Baltazar'];
 
-var items = [
+var createName = function (name, className, num, idPrefix) {
+  var miDiv =  document.createElement('div');
+  miDiv.innerHTML = name;
+
+  miDiv.id = idPrefix + num;
+  miDiv.className = className;
+  //document.createElement('input').value = 'papa';
+  miDiv.setAttribute('style', 'color:orange; font-weight: bold');
+
+
+  return miDiv
+};
+
+for (var i = 0; i < nombres.length; i++) {
+  var newElem = createName(nombres[i], 'nosotros', i, 'nuestros_nombres_');
+  content.appendChild(newElem);
+}
+// i = 4
+for (var j = 0; j < reyesMagos.length; j++) {
+  content.appendChild(createName(reyesMagos[j], 'reyes_magos', j, 'nombres_reyes_magos_'))
+}
+
+var removeNode = function (id) {
+  var nodeToRemove = document.getElementById(id);
+  nodeToRemove.parentNode.removeChild(nodeToRemove)
+  //nodeToRemove.remove()
+};
+
+
+var students = [
   {
-    nombre: 'ana',
-    apellido: 'turrillo'
+    firstName: 'Ariela',
+    lastName: 'Baruffaldi',
+    dni: 22999333,
+    email: 'juan@gmail.com'
   },{
-    nombre: 'cosme',
-    apellido: 'fulanito'
+    firstName: 'Javier',
+    lastName: 'Claria',
+    dni: 22999333,
+    email: 'juan@gmail.com'
   },{
-    nombre: 'pepe',
-    apellido: 'pepez'
+    firstName: 'Mauricio',
+    lastName: 'Sevilla',
+    dni: 22999333,
+    email: 'juan@gmail.com'
+  },{
+    firstName: 'Alessandra',
+    lastName: 'Tagliatti',
+    dni: 22999333,
+    email: 'juan@gmail.com'
   }
 ];
 
-for (var i = 0; i < items.length; i++) {
-  var name = items[i].nombre + ' ' + items[i].apellido;
+var newStudent = {
+  firstName: 'Pepe',
+  lastName: 'Pepez',
+  dni: 22999333,
+  email: 'juan@gmail.com'
+};
 
-  var item = document.createElement('li');
-  var itemContent = document.createElement('p');
+var createStudent = function (student) {
+  var studentNode = document.createElement('li');
 
-  itemContent.innerHTML = name;
+  studentNode.className = 'list-group-item';
+  studentNode.id = student.dni;
 
-  item.appendChild(itemContent);
+  studentNode.innerHTML = '<h1>' +
+    student.firstName + ' ' + student.lastName +
+    '</h1>' +
+    '<h3>' +
+    'DNI: ' + student.dni +
+    '</h3><p>' +
+    'E-mail: ' + student.email +
+    '</p>';
 
-  lista.appendChild(item)
+  return studentNode;
+};
+
+var studentList = document.createElement('ul');
+studentList.className = 'list-group';
+
+
+for (var k = 0; k < students.length; k++) {
+  var student = createStudent(students[k]);
+  studentList.appendChild(student)
 }
 
-contenido.appendChild(lista);
+studentList.appendChild(createStudent(newStudent));
+
+content.appendChild(studentList);
