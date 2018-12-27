@@ -40,17 +40,17 @@ var students = [
   },{
     firstName: 'Javier',
     lastName: 'Claria',
-    dni: 22999333,
+    dni: 22999334,
     email: 'juan@gmail.com'
   },{
     firstName: 'Mauricio',
     lastName: 'Sevilla',
-    dni: 22999333,
+    dni: 22999335,
     email: 'juan@gmail.com'
   },{
     firstName: 'Alessandra',
     lastName: 'Tagliatti',
-    dni: 22999333,
+    dni: 22999336,
     email: 'juan@gmail.com'
   }
 ];
@@ -58,7 +58,7 @@ var students = [
 var newStudent = {
   firstName: 'Pepe',
   lastName: 'Pepez',
-  dni: 22999333,
+  dni: 22999337,
   email: 'juan@gmail.com'
 };
 
@@ -92,3 +92,14 @@ for (var k = 0; k < students.length; k++) {
 studentList.appendChild(createStudent(newStudent));
 
 content.appendChild(studentList);
+
+var removeStudent = {
+  removeElement: function (nodeId) {
+    document.getElementById(nodeId).remove()
+  },
+  removeChild: function (nodeId) {
+    var node = document.getElementById(nodeId);
+    node.parentNode.removeChild(node);
+  }
+};
+
