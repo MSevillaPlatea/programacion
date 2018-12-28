@@ -1,0 +1,12 @@
+.box {
+    width: 400px;
+    height: 400px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.blue {
+    background-color: deepskyblue;
+}
