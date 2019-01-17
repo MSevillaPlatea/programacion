@@ -1,37 +1,35 @@
 $(document).ready(function () {
-
-  var counter = 0;
-  var setCounter = function (counter) {
-    $('#counter').text(counter);
-
-    return counter + 1
-  };
-
-  setCounter(counter);
-
-  $(document).keydown(function (event) {
-
-    var key = event.which;
-
-    if (key === 38) { //arriba
-      counter = counter + 1;
-    }
-
-    if (key === 40) { // abajo
-      counter = counter - 1
-    }
-
-    if (key === 13) { // enter
-      counter = 0
-    }
-
-    setCounter(counter)
-
+  var mainTitle = $('#main-title');
+/*
+  mainTitle.delay(1000).hide(3000, function () {
+    console.log('termino la animacion')
   });
 
 
-  $('#miId').click(function () {
+  mainTitle.fadeOut(3000, function () {
+    console.log('termino la animacion')
+  })
 
+
+  mainTitle.slideUp(3000, function () {
+    console.log('termino la animacion')
+  })
+
+
+  mainTitle.show(3000, function () {
+    console.log('termino la animacion')
+  })
+
+
+
+  mainTitle.delay(300).fadeIn(3000, function () {
+    console.log('termino la animacion')
+  })
+   */
+
+  $(window).scroll(function () {
+    console.log('El usuario se está desplazando')
+    console.log($(window).scrollTop())
   })
 
 });
