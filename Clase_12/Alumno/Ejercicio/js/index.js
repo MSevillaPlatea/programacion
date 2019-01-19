@@ -48,7 +48,7 @@ $("document").ready(function() {
     elemento.click(function(e) {
         var objetivo = $(e.target);
 
-
+        objetivo.toggleClass()
         revisa_y_guarda_clase(objetivo);
 
 
