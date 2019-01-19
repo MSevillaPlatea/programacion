@@ -6,10 +6,6 @@
 /**/node_modules
 **/**/node_modules
 
-#/Clase_14/Profe/Ejercicio/js
-/Clase_12/Profe/Desafío
-/Clase_12/Profe/En_clase/Parallax
-
 #/Clase_01
 #/Clase_02
 #/Clase_03
@@ -23,7 +19,7 @@
 #/Clase_12
 #/Clase_13
 #/Clase_14
-/Clase_15
+#/Clase_15
 /Clase_16
 /Clase_17_18
 /Teoria_plataforma
