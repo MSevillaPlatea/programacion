@@ -27,32 +27,4 @@ $(document).ready(function() {
 
     });
 
-
-
-
-
-
-
-
-
-
-
-
 });
-
-
-/* if (!elemento.val()) {
-    console.log("campo vacio");
-} else if (elemento.val().indexOf('@') === -1) {
-    console.log("no es correo valido");
-    elemento.removeClass('is-valid');
-    elemento.addClass('is-invalid');
-} else if (elemento.val().indexOf('.') === -1) {
-    console.log("no es correo valido");
-    elemento.removeClass('is-valid');
-    elemento.addClass('is-invalid');
-} else {
-    $("body").html(elemento.val());
-    console.log("correo valido");
-    elemento.addClass('is-valid');
-} */
