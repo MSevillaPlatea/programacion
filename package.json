@@ -1,0 +1,11 @@
+{
+  "name": "programador-web-3655",
+  "version": "1.0.0",
+  "description": "Este repositorio es una guía para ir subiendo cada clase que hagamos juntos, por cada una les voy a agregar una carpeta con el número de la clase y adentro van a encontrar:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
