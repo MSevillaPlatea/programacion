@@ -1,0 +1,26 @@
+{
+    "name": "proyecto_final",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "server": "http-server",
+        "dev": "webpack --mode=development",
+        "start": "concurrently --kill-others \"npm run dev\" \"npm run server\"",
+        "build": "webpack --mode=production"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "bootstrap": "^4.1.2",
+        "concurrently": "^4.1.0",
+        "crossroads": "^0.12.2",
+        "css-loader": "^2.1.0",
+        "jquery": "^3.3.1",
+        "popper.js": "^1.14.3",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.0",
+        "webpack-cli": "^3.2.1"
+    },
+    "dependencies": {}
+}
