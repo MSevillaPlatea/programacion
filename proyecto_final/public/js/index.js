@@ -217,7 +217,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/app */ \"./src/js/app.js\");\n/* harmony import */ var _js_utils_localStorage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/utils/localStorage */ \"./src/js/utils/localStorage.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nObject(_js_utils_localStorage__WEBPACK_IMPORTED_MODULE_5__[\"setLocalList\"])('prueba', [2, 3, 4]);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var popper_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! popper.js */ \"./node_modules/popper.js/dist/esm/popper.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ \"./node_modules/bootstrap/dist/css/bootstrap.min.css\");\n/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/app */ \"./src/js/app.js\");\n/* harmony import */ var _js_utils_localStorage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/utils/localStorage */ \"./src/js/utils/localStorage.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n//setLocalList('prueba', [2, 3, 4]);\r\n\r\n$(\".btn btn-danger\").click(Object(_js_utils_localStorage__WEBPACK_IMPORTED_MODULE_5__[\"setLocalList\"])('prueba', [2, 3, 4]));\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -233,27 +233,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rou
 
 /***/ }),
 
-/***/ "./src/js/controllers/contactoController.js":
-/*!**************************************************!*\
-  !*** ./src/js/controllers/contactoController.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction contactoController() {\r\n    console.log('Se cargo la pagina de contacto');\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (contactoController);\n\n//# sourceURL=webpack:///./src/js/controllers/contactoController.js?");
-
-/***/ }),
-
-/***/ "./src/js/controllers/galeriaController.js":
+/***/ "./src/js/controllers/contactController.js":
 /*!*************************************************!*\
-  !*** ./src/js/controllers/galeriaController.js ***!
+  !*** ./src/js/controllers/contactController.js ***!
   \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nfunction galeriaController() {\r\n    console.log('Se cargo la galeria');\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (galeriaController);\n\n//# sourceURL=webpack:///./src/js/controllers/galeriaController.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nfunction contactController() {\r\n    console.log('Se cargo la pagina de contacto');\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (contactController);\n\n//# sourceURL=webpack:///./src/js/controllers/contactController.js?");
+
+/***/ }),
+
+/***/ "./src/js/controllers/guardadosController.js":
+/*!***************************************************!*\
+  !*** ./src/js/controllers/guardadosController.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction guardadosController() {\r\n    console.log('Se cargo guardados');\r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (guardadosController);\n\n//# sourceURL=webpack:///./src/js/controllers/guardadosController.js?");
 
 /***/ }),
 
@@ -269,6 +269,18 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction homeController() {\r
 
 /***/ }),
 
+/***/ "./src/js/controllers/peopleController.js":
+/*!************************************************!*\
+  !*** ./src/js/controllers/peopleController.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {function personajes(url) {\r\n    $.ajax(url)\r\n        .done(function(data) {\r\n            console.log(\"se cargaron los personajes\")\r\n            for (var i = 0; i < data.results.length; i++) {\r\n                $(\"#tableBody\").append(\"<tr><th>\" + i + \"</th>\" + \"<th>\" + data.results[i].name + \"</th>\" + \"<th>\" + data.results[i].gender + \"</th>\" + \"<th>\" + data.results[i].height + \"</th>\" + \"<th>\" + data.results[i].mass + \"</th>\" + \"<th>\" + data.results[i].eye_color + \"</th>\" + \"<th>\" + \"<button class='btn btn-danger'>Guardar</button>\" + \"</th></tr>\");\r\n                console.log(data.results[i].name);\r\n            }\r\n        })\r\n        .fail(function(error) {\r\n            console.log(\"error\" + error);\r\n        })\r\n}\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (personajes);\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/controllers/peopleController.js?");
+
+/***/ }),
+
 /***/ "./src/js/router.js":
 /*!**************************!*\
   !*** ./src/js/router.js ***!
@@ -277,7 +289,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction homeController() {\r
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var crossroads__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crossroads */ \"./node_modules/crossroads/dist/crossroads.js\");\n/* harmony import */ var crossroads__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crossroads__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _controllers_homeController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controllers/homeController */ \"./src/js/controllers/homeController.js\");\n/* harmony import */ var _controllers_galeriaController__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./controllers/galeriaController */ \"./src/js/controllers/galeriaController.js\");\n/* harmony import */ var _controllers_contactoController__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./controllers/contactoController */ \"./src/js/controllers/contactoController.js\");\n\r\n\r\n\r\n\r\n\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"/\", function() {\r\n    $('#root').load('./partials/home.html', _controllers_homeController__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\r\n});\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/contacto\", function() {\r\n    $('#root').load('./partials/contacto.html', _controllers_contactoController__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\r\n});\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/galeria\", function() {\r\n    $('#root').load('./partials/galeria.html', _controllers_galeriaController__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\r\n});\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute('/', function() {\r\n    console.log('Home page')\r\n})\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/contact\", function() {\r\n    console.log(\"contacto\");\r\n})\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/prueba\", function() {\r\n    console.log(\"prueba\");\r\n})\r\n\r\n// En cada cambio del # va a verificar las rutas\r\n$(window).on('hashchange', function() {\r\n    crossroads__WEBPACK_IMPORTED_MODULE_0___default.a.parse(window.location.hash)\r\n})\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.parse(window.location.hash)\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/router.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var crossroads__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crossroads */ \"./node_modules/crossroads/dist/crossroads.js\");\n/* harmony import */ var crossroads__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crossroads__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _controllers_homeController__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./controllers/homeController */ \"./src/js/controllers/homeController.js\");\n/* harmony import */ var _controllers_guardadosController__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./controllers/guardadosController */ \"./src/js/controllers/guardadosController.js\");\n/* harmony import */ var _controllers_contactController__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./controllers/contactController */ \"./src/js/controllers/contactController.js\");\n/* harmony import */ var _controllers_peopleController__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./controllers/peopleController */ \"./src/js/controllers/peopleController.js\");\n\r\n\r\n\r\n\r\n\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"/\", function() {\r\n    $('#root').load('./partials/home.html', _controllers_homeController__WEBPACK_IMPORTED_MODULE_1__[\"default\"])\r\n});\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/contact\", function() {\r\n    $('#root').load('./partials/contact.html', _controllers_contactController__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\r\n});\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/guardados\", function() {\r\n    $('#root').load('./partials/guardados.html', _controllers_guardadosController__WEBPACK_IMPORTED_MODULE_2__[\"default\"])\r\n});\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/people\", function() {\r\n    $('#root').load('./partials/people.html', Object(_controllers_peopleController__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(\"https://swapi.co/api/people\"))\r\n});\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute('/', function() {\r\n    console.log('Home page')\r\n})\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/contact\", function() {\r\n    console.log(\"contact\");\r\n})\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/people\", function() {\r\n    console.log(\"people\");\r\n})\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.addRoute(\"#/guardados\", function() {\r\n    console.log(\"guardados\");\r\n})\r\n\r\n// En cada cambio del # va a verificar las rutas\r\n$(window).on('hashchange', function() {\r\n    crossroads__WEBPACK_IMPORTED_MODULE_0___default.a.parse(window.location.hash)\r\n})\r\n\r\ncrossroads__WEBPACK_IMPORTED_MODULE_0___default.a.parse(window.location.hash)\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\")))\n\n//# sourceURL=webpack:///./src/js/router.js?");
 
 /***/ }),
 

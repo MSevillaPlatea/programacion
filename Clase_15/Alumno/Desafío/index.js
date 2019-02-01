@@ -42,21 +42,21 @@ $(document).ready(function() {
     // ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
     //
 
-    /*  function personajes(url) {
-         $.ajax(url)
-             .done(function(data) {
+    /*     function personajes(url) {
+            $.ajax(url)
+                .done(function(data) {
 
-                 for (var i = 0; i < data.results.length; i++) {
-                     console.log("personajes: " + data.results[i].name);
-                 }
-             })
-             .fail(function(error) {
-                 console.log("error" + data);
-             })
-     }
+                    for (var i = 0; i < data.results.length; i++) {
+                        console.log("personajes: " + data.results[i].name);
+                    }
+                })
+                .fail(function(error) {
+                    console.log("error" + data);
+                })
+        }
 
-     personajes("https://swapi.co/api/people"); */
-
+        personajes("https://swapi.co/api/people");
+     */
 
 
 
