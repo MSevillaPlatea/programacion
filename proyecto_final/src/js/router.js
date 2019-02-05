@@ -19,6 +19,7 @@ crossroads.addRoute("#/people", function() {
     $('#root').load('./partials/people.html', personajes("https://swapi.co/api/people"))
 });
 
+
 crossroads.addRoute('/', function() {
     console.log('Home page')
 })

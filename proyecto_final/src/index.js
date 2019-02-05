@@ -8,4 +8,7 @@ import { setLocalList } from './js/utils/localStorage';
 
 //setLocalList('prueba', [2, 3, 4]);
 
-$(".btn btn-danger").click(setLocalList('prueba', [2, 3, 4]));
+
+//var personaje = [2, 32, 1];
+
+//$("body").click(guardar);
